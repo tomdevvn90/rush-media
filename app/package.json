@@ -1,0 +1,47 @@
+{
+  "name": "rush-media-app",
+  "version": "2.0.0",
+  "private": true,
+  "dependencies": {
+    "add": "^2.0.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "typescript": "^3.8.3",
+    "yarn": "^1.22.4"
+  },
+  "scripts": {
+    "start": "node ./scripts/start-non-split.js",
+    "build": "node ./scripts/build-non-split.js",
+    "build-plugin": "yarn build && node ./scripts/build-wp-archive.js"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/classnames": "^2.2.11",
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.13.5",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "archiver": "^4.0.1",
+    "classnames": "^2.2.6",
+    "node-sass": "^4.14.0",
+    "rewire": "^5.0.0"
+  }
+}
